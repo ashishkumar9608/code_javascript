@@ -14,3 +14,20 @@ let myobj = {
 const myfunction = function(){
     console.log("Hello Ashish");
 }
+
+// stack (primitive), Heap (Non - primitive)
+
+let name = "Ashish";
+
+let anothername = "AshishKumar";
+
+
+//******** Heap *********
+let userone = {
+    email:"ashish@gmail.com"
+};
+
+let usertwo = userone;
+usertwo.email = "ashish@iitroorkee";
+console.log(usertwo.email);
+console.log(userone.email);
